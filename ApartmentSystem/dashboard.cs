@@ -156,7 +156,5 @@ namespace ApartmentSystem
             sidePanel.Height = paymentIcon.Height;
             sidePanel.Top = paymentIcon.Top;
         }
-
-       
     }
 }

@@ -47,6 +47,7 @@
             this.dashboardScreen1 = new ApartmentSystem.dashboardScreen();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
@@ -159,6 +160,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(40)))), ((int)(((byte)(17)))));
+            this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(0, -1);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1080, 80);
@@ -171,11 +173,11 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(363, 19);
+            this.label1.Location = new System.Drawing.Point(356, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(406, 29);
+            this.label1.Size = new System.Drawing.Size(423, 29);
             this.label1.TabIndex = 2;
-            this.label1.Text = "ARENIA\'S APARTMENT SYSTEM";
+            this.label1.Text = "ARSENIA\'S APARTMENT SYSTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel3
@@ -246,17 +248,17 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "label";
             this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
