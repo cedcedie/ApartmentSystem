@@ -34,7 +34,6 @@
             this.sidePanel = new System.Windows.Forms.Panel();
             this.settingsIcon = new System.Windows.Forms.Button();
             this.paymentIcon = new System.Windows.Forms.Button();
-            this.invoiceIcon = new System.Windows.Forms.Button();
             this.TenantIcon = new System.Windows.Forms.Button();
             this.unitsIcon = new System.Windows.Forms.Button();
             this.dashboardIcon = new System.Windows.Forms.Button();
@@ -42,9 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.userSettingScreen1 = new ApartmentSystem.userSettingScreen();
-            this.billSettingsScreen1 = new ApartmentSystem.billSettingsScreen();
             this.paymentScreen1 = new ApartmentSystem.paymentScreen();
-            this.invoiceScreen1 = new ApartmentSystem.invoiceScreen();
             this.unitScreen1 = new ApartmentSystem.unitScreen();
             this.tenantsScreen1 = new ApartmentSystem.tenantsScreen();
             this.dashboardScreen1 = new ApartmentSystem.dashboardScreen();
@@ -68,7 +65,6 @@
             this.panel2.Controls.Add(this.sidePanel);
             this.panel2.Controls.Add(this.settingsIcon);
             this.panel2.Controls.Add(this.paymentIcon);
-            this.panel2.Controls.Add(this.invoiceIcon);
             this.panel2.Controls.Add(this.TenantIcon);
             this.panel2.Controls.Add(this.unitsIcon);
             this.panel2.Controls.Add(this.dashboardIcon);
@@ -89,9 +85,10 @@
             // 
             this.settingsIcon.FlatAppearance.BorderSize = 0;
             this.settingsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsIcon.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsIcon.Image = ((System.Drawing.Image)(resources.GetObject("settingsIcon.Image")));
             this.settingsIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsIcon.Location = new System.Drawing.Point(12, 356);
+            this.settingsIcon.Location = new System.Drawing.Point(12, 294);
             this.settingsIcon.Name = "settingsIcon";
             this.settingsIcon.Size = new System.Drawing.Size(158, 60);
             this.settingsIcon.TabIndex = 12;
@@ -103,9 +100,10 @@
             // 
             this.paymentIcon.FlatAppearance.BorderSize = 0;
             this.paymentIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.paymentIcon.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paymentIcon.Image = ((System.Drawing.Image)(resources.GetObject("paymentIcon.Image")));
             this.paymentIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.paymentIcon.Location = new System.Drawing.Point(12, 290);
+            this.paymentIcon.Location = new System.Drawing.Point(12, 229);
             this.paymentIcon.Name = "paymentIcon";
             this.paymentIcon.Size = new System.Drawing.Size(158, 60);
             this.paymentIcon.TabIndex = 12;
@@ -113,27 +111,14 @@
             this.paymentIcon.UseVisualStyleBackColor = true;
             this.paymentIcon.Click += new System.EventHandler(this.paymentIcon_Click);
             // 
-            // invoiceIcon
-            // 
-            this.invoiceIcon.FlatAppearance.BorderSize = 0;
-            this.invoiceIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.invoiceIcon.Image = ((System.Drawing.Image)(resources.GetObject("invoiceIcon.Image")));
-            this.invoiceIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.invoiceIcon.Location = new System.Drawing.Point(12, 226);
-            this.invoiceIcon.Name = "invoiceIcon";
-            this.invoiceIcon.Size = new System.Drawing.Size(158, 60);
-            this.invoiceIcon.TabIndex = 12;
-            this.invoiceIcon.Text = "Invoice";
-            this.invoiceIcon.UseVisualStyleBackColor = true;
-            this.invoiceIcon.Click += new System.EventHandler(this.invoiceIcon_Click);
-            // 
             // TenantIcon
             // 
             this.TenantIcon.FlatAppearance.BorderSize = 0;
             this.TenantIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TenantIcon.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TenantIcon.Image = ((System.Drawing.Image)(resources.GetObject("TenantIcon.Image")));
             this.TenantIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TenantIcon.Location = new System.Drawing.Point(12, 162);
+            this.TenantIcon.Location = new System.Drawing.Point(12, 164);
             this.TenantIcon.Name = "TenantIcon";
             this.TenantIcon.Size = new System.Drawing.Size(158, 60);
             this.TenantIcon.TabIndex = 12;
@@ -145,9 +130,10 @@
             // 
             this.unitsIcon.FlatAppearance.BorderSize = 0;
             this.unitsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.unitsIcon.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unitsIcon.Image = ((System.Drawing.Image)(resources.GetObject("unitsIcon.Image")));
             this.unitsIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.unitsIcon.Location = new System.Drawing.Point(12, 98);
+            this.unitsIcon.Location = new System.Drawing.Point(12, 99);
             this.unitsIcon.Name = "unitsIcon";
             this.unitsIcon.Size = new System.Drawing.Size(158, 60);
             this.unitsIcon.TabIndex = 12;
@@ -159,6 +145,7 @@
             // 
             this.dashboardIcon.FlatAppearance.BorderSize = 0;
             this.dashboardIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dashboardIcon.Font = new System.Drawing.Font("Poppins SemiBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardIcon.Image = ((System.Drawing.Image)(resources.GetObject("dashboardIcon.Image")));
             this.dashboardIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboardIcon.Location = new System.Drawing.Point(12, 34);
@@ -171,7 +158,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(40)))), ((int)(((byte)(17)))));
             this.panel5.Location = new System.Drawing.Point(0, -1);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1080, 80);
@@ -180,12 +167,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(363, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(405, 33);
+            this.label1.Size = new System.Drawing.Size(406, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "ARENIA\'S APARTMENT SYSTEM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -193,9 +181,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.userSettingScreen1);
-            this.panel3.Controls.Add(this.billSettingsScreen1);
             this.panel3.Controls.Add(this.paymentScreen1);
-            this.panel3.Controls.Add(this.invoiceScreen1);
             this.panel3.Controls.Add(this.unitScreen1);
             this.panel3.Controls.Add(this.tenantsScreen1);
             this.panel3.Controls.Add(this.dashboardScreen1);
@@ -211,13 +197,6 @@
             this.userSettingScreen1.Size = new System.Drawing.Size(890, 480);
             this.userSettingScreen1.TabIndex = 6;
             // 
-            // billSettingsScreen1
-            // 
-            this.billSettingsScreen1.Location = new System.Drawing.Point(0, 0);
-            this.billSettingsScreen1.Name = "billSettingsScreen1";
-            this.billSettingsScreen1.Size = new System.Drawing.Size(890, 480);
-            this.billSettingsScreen1.TabIndex = 5;
-            // 
             // paymentScreen1
             // 
             this.paymentScreen1.Location = new System.Drawing.Point(0, 1);
@@ -225,15 +204,9 @@
             this.paymentScreen1.Size = new System.Drawing.Size(890, 480);
             this.paymentScreen1.TabIndex = 4;
             // 
-            // invoiceScreen1
-            // 
-            this.invoiceScreen1.Location = new System.Drawing.Point(0, 0);
-            this.invoiceScreen1.Name = "invoiceScreen1";
-            this.invoiceScreen1.Size = new System.Drawing.Size(890, 480);
-            this.invoiceScreen1.TabIndex = 3;
-            // 
             // unitScreen1
             // 
+            this.unitScreen1.BackColor = System.Drawing.Color.White;
             this.unitScreen1.Location = new System.Drawing.Point(0, 1);
             this.unitScreen1.Name = "unitScreen1";
             this.unitScreen1.Size = new System.Drawing.Size(890, 480);
@@ -293,7 +266,6 @@
         private System.Windows.Forms.Panel sidePanel;
         private System.Windows.Forms.Button settingsIcon;
         private System.Windows.Forms.Button paymentIcon;
-        private System.Windows.Forms.Button invoiceIcon;
         private System.Windows.Forms.Button TenantIcon;
         private System.Windows.Forms.Button unitsIcon;
         private System.Windows.Forms.Button dashboardIcon;
@@ -304,9 +276,7 @@
         private unitScreen unitScreen1;
         private tenantsScreen tenantsScreen1;
         private dashboardScreen dashboardScreen1;
-        private invoiceScreen invoiceScreen1;
         private paymentScreen paymentScreen1;
         private userSettingScreen userSettingScreen1;
-        private billSettingsScreen billSettingsScreen1;
     }
 }

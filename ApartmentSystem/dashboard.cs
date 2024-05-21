@@ -14,14 +14,12 @@ namespace ApartmentSystem
             sidePanel.Height = dashboardIcon.Height;
             dashboardScreen1.ViewDetailsUnitsClicked += ViewDetailsUnitsClicked_Handler;
             dashboardScreen1.ViewDetailsTenantsClicked += ViewDetailsTenantsClicked_Handler;
-            dashboardScreen1.ViewDetailsInvoiceClicked += ViewDetailsInvoiceClicked_Handler;
             dashboardScreen1.ViewDetailsPaymentsClicked += ViewDetailsPaymentsClicked_Handler;
 
             dashboardScreen1 = new dashboardScreen();
             dashboardScreen1.Dock = DockStyle.Fill;
             dashboardScreen1.ViewDetailsTenantsClicked += DashboardScreen1_ViewDetailsTenantsClicked;
             dashboardScreen1.ViewDetailsUnitsClicked += DashboardScreen1_ViewDetailsUnitsClicked;
-            dashboardScreen1.ViewDetailsInvoiceClicked += DashboardScreen1_ViewDetailsInvoiceClicked;
             dashboardScreen1.ViewDetailsPaymentsClicked += DashboardScreen1_ViewDetailsPaymentsClicked;
 
             tenantsScreen1 = new tenantsScreen();
@@ -32,9 +30,7 @@ namespace ApartmentSystem
             unitScreen1.Dock = DockStyle.Fill;
             unitScreen1.DashboardIconClicked += UnitScreen_DashboardIconClicked;
 
-            invoiceScreen1 = new invoiceScreen();
-            invoiceScreen1.Dock = DockStyle.Fill;
-            invoiceScreen1.DashboardIconClicked += InvoiceScreen1_DashboardIconClicked;
+      
 
             paymentScreen1 = new paymentScreen();
             paymentScreen1.Dock = DockStyle.Fill;
@@ -48,27 +44,6 @@ namespace ApartmentSystem
             ShowDashboardScreen();
         }
 
-        private void ShowInvoiceScreen()
-        {
-            panel3.Controls.Clear();
-            panel3.Controls.Add(invoiceScreen1);
-            dashboardScreen1.Visible = false;
-            tenantsScreen1.Visible = false;
-            unitScreen1.Visible = false;
-            invoiceScreen1.Visible = true;
-            paymentScreen1.Visible = false;
-            sidePanel.Height = invoiceIcon.Height;
-            sidePanel.Top = invoiceIcon.Top;
-        }
-        private void DashboardScreen1_ViewDetailsInvoiceClicked(object sender, EventArgs e)
-        {
-            ShowInvoiceScreen();
-        }
-
-        private void InvoiceScreen1_DashboardIconClicked(object sender, EventArgs e)
-        {
-            ShowDashboardScreen();
-        }
         private void DashboardScreen1_ViewDetailsPaymentsClicked(object sender, EventArgs e)
         {
             ShowPaymentScreen();
@@ -80,7 +55,7 @@ namespace ApartmentSystem
             dashboardScreen1.Visible = false;
             tenantsScreen1.Visible = false;
             unitScreen1.Visible = false;
-            invoiceScreen1.Visible = false;
+   
             paymentScreen1.Visible = true;
             sidePanel.Height = paymentIcon.Height;
             sidePanel.Top = paymentIcon.Top;
@@ -103,7 +78,6 @@ namespace ApartmentSystem
             dashboardScreen1.Visible = true;
             tenantsScreen1.Visible = false;
             unitScreen1.Visible = false;
-            invoiceScreen1.Visible = false;
             paymentScreen1.Visible = false;
             sidePanel.Height = dashboardIcon.Height;
             sidePanel.Top = dashboardIcon.Top;
@@ -120,7 +94,7 @@ namespace ApartmentSystem
             dashboardScreen1.Visible = false;
             tenantsScreen1.Visible = true;
             unitScreen1.Visible = false;
-            invoiceScreen1.Visible = false;
+  
             paymentScreen1.Visible = false;
             sidePanel.Height = TenantIcon.Height;
             sidePanel.Top = TenantIcon.Top;
@@ -142,7 +116,6 @@ namespace ApartmentSystem
             dashboardScreen1.Visible = false;
             tenantsScreen1.Visible = false;
             unitScreen1.Visible = true;
-            invoiceScreen1.Visible = false;
             paymentScreen1.Visible = false;
             sidePanel.Height = unitsIcon.Height;
             sidePanel.Top = unitsIcon.Top;
@@ -158,11 +131,6 @@ namespace ApartmentSystem
         private void UnitScreen_DashboardIconClicked(object sender, EventArgs e)
         {
             ShowDashboardScreen();
-        }
-
-        private void invoiceIcon_Click(object sender, EventArgs e)
-        {
-           ShowInvoiceScreen();
         }
 
         private void paymentIcon_Click(object sender, EventArgs e)
@@ -182,11 +150,6 @@ namespace ApartmentSystem
             sidePanel.Top = TenantIcon.Top;
         }
 
-        private void ViewDetailsInvoiceClicked_Handler(object sender, EventArgs e)
-        {
-            sidePanel.Height = invoiceIcon.Height;
-            sidePanel.Top = invoiceIcon.Top;
-        }
 
         private void ViewDetailsPaymentsClicked_Handler(object sender, EventArgs e)
         {

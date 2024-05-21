@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Avalonia.11.0.10\build\Avalonia.props" Condition="Exists('..\packages\Avalonia.11.0.10\build\Avalonia.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,6 +36,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Avalonia, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Base, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Controls, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Controls.ColorPicker, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.Controls.ColorPicker.11.0.10\lib\netstandard2.0\Avalonia.Controls.ColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.DesignerSupport, Version=0.7.0.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.DesignerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Dialogs, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Markup, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Markup.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Markup.Xaml, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Markup.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Metal, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.Metal.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.MicroCom, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.MicroCom.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.OpenGL, Version=11.0.10.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.11.0.10\lib\net461\Avalonia.OpenGL.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Remote.Protocol, Version=11.0.10.0, Culture=neutral, PublicKeyToken=7ecde292c616a9f3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.Remote.Protocol.11.0.10\lib\netstandard2.0\Avalonia.Remote.Protocol.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
@@ -46,6 +83,9 @@
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MicroCom.Runtime, Version=0.11.0.0, Culture=neutral, PublicKeyToken=b30be05a5f7688e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicroCom.Runtime.0.11.0\lib\netstandard2.0\MicroCom.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -66,6 +106,10 @@
     <Reference Include="System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.CodeDom.8.0.0\lib\net462\System.CodeDom.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
@@ -104,17 +148,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addUserForm.cs">
+    <Compile Include="addNewUnitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addUserForm.Designer.cs">
-      <DependentUpon>addUserForm.cs</DependentUpon>
+    <Compile Include="addNewUnitForm.Designer.cs">
+      <DependentUpon>addNewUnitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="billSettingsScreen.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="addnewUnitWindow.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="billSettingsScreen.Designer.cs">
-      <DependentUpon>billSettingsScreen.cs</DependentUpon>
+    <Compile Include="addnewUnitWindow.Designer.cs">
+      <DependentUpon>addnewUnitWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentForm.Designer.cs">
+      <DependentUpon>paymentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="clerkDashboard.cs">
       <SubType>Form</SubType>
@@ -164,29 +214,11 @@
     <Compile Include="dashboardScreen.Designer.cs">
       <DependentUpon>dashboardScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="invoiceScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="invoiceScreen.Designer.cs">
-      <DependentUpon>invoiceScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="legalAgreement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="legalAgreement.Designer.cs">
-      <DependentUpon>legalAgreement.cs</DependentUpon>
-    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="paymentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="paymentForm.Designer.cs">
-      <DependentUpon>paymentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="paymentScreen.cs">
       <SubType>UserControl</SubType>
@@ -214,11 +246,14 @@
     <Compile Include="userSettingScreen.Designer.cs">
       <DependentUpon>userSettingScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="addUserForm.resx">
-      <DependentUpon>addUserForm.cs</DependentUpon>
+    <EmbeddedResource Include="addNewUnitForm.resx">
+      <DependentUpon>addNewUnitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="billSettingsScreen.resx">
-      <DependentUpon>billSettingsScreen.cs</DependentUpon>
+    <EmbeddedResource Include="addnewUnitWindow.resx">
+      <DependentUpon>addnewUnitWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentForm.resx">
+      <DependentUpon>paymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="clerkDashboard.resx">
       <DependentUpon>clerkDashboard.cs</DependentUpon>
@@ -244,14 +279,8 @@
     <EmbeddedResource Include="dashboardScreen.resx">
       <DependentUpon>dashboardScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="invoiceScreen.resx">
-      <DependentUpon>invoiceScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="paymentForm.resx">
-      <DependentUpon>paymentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="paymentScreen.resx">
       <DependentUpon>paymentScreen.cs</DependentUpon>
@@ -312,5 +341,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\QuestPDF.2024.3.6\build\net4\QuestPDF.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\QuestPDF.2024.3.6\build\net4\QuestPDF.targets'))" />
+    <Error Condition="!Exists('..\packages\Avalonia.BuildServices.0.0.29\build\Avalonia.BuildServices.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.BuildServices.0.0.29\build\Avalonia.BuildServices.targets'))" />
+    <Error Condition="!Exists('..\packages\Avalonia.11.0.10\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.11.0.10\build\Avalonia.props'))" />
+    <Error Condition="!Exists('..\packages\Avalonia.11.0.10\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.11.0.10\build\Avalonia.targets'))" />
   </Target>
+  <Import Project="..\packages\Avalonia.BuildServices.0.0.29\build\Avalonia.BuildServices.targets" Condition="Exists('..\packages\Avalonia.BuildServices.0.0.29\build\Avalonia.BuildServices.targets')" />
+  <Import Project="..\packages\Avalonia.11.0.10\build\Avalonia.targets" Condition="Exists('..\packages\Avalonia.11.0.10\build\Avalonia.targets')" />
 </Project>

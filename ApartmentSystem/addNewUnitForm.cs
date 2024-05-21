@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ApartmentSystem
 {
-    public partial class billSettingsScreen : UserControl
+    public partial class addNewUnitForm : Form
     {
-        public billSettingsScreen()
+        public addNewUnitForm()
         {
             InitializeComponent();
         }

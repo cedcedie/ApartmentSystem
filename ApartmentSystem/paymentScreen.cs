@@ -20,7 +20,7 @@ namespace ApartmentSystem
 
         private void addUnit_Click(object sender, EventArgs e)
         {
-            addUserForm addUser = new addUserForm();
+            paymentForm addUser = new paymentForm();
             addUser.Show();
       
         }
