@@ -19,4 +19,8 @@ namespace ApartmentSystem
             Application.Run(new login());
         }
     }
+    public static class Connection
+    {
+        public static string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Airone\Source\Repos\ApartmentSystem\ApartmentSystem\APARTMENT_RENTAL.mdf;Integrated Security=True";
+    }
 }
