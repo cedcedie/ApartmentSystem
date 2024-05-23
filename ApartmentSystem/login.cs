@@ -25,6 +25,7 @@ namespace ApartmentSystem
             this.Hide();
 
             SqlConnection conn = new SqlConnection(Connection.conn);
+            //SqlAdapter
         }
 
         private void button1_Click(object sender, EventArgs e)
