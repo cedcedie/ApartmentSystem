@@ -208,7 +208,6 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::ApartmentSystem.Properties.Resources.brown1;
             this.pictureBox16.Location = new System.Drawing.Point(-418, 260);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(200, 80);
