@@ -23,6 +23,8 @@ namespace ApartmentSystem
             admin dashboard = new admin();
             dashboard.Show();
             this.Hide();
+
+            SqlConnection conn = new SqlConnection(Connection.conn);
         }
 
         private void button1_Click(object sender, EventArgs e)
