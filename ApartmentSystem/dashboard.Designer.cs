@@ -40,12 +40,12 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.userSettingScreen1 = new ApartmentSystem.userSettingScreen();
             this.paymentScreen1 = new ApartmentSystem.paymentScreen();
             this.unitScreen1 = new ApartmentSystem.unitScreen();
             this.tenantsScreen1 = new ApartmentSystem.tenantsScreen();
             this.dashboardScreen1 = new ApartmentSystem.dashboardScreen();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -93,7 +93,7 @@
             this.settingsIcon.Name = "settingsIcon";
             this.settingsIcon.Size = new System.Drawing.Size(158, 60);
             this.settingsIcon.TabIndex = 12;
-            this.settingsIcon.Text = "Settings";
+            this.settingsIcon.Text = "Users";
             this.settingsIcon.UseVisualStyleBackColor = true;
             this.settingsIcon.Click += new System.EventHandler(this.settingsIcon_Click);
             // 
@@ -192,6 +192,15 @@
             this.panel3.Size = new System.Drawing.Size(893, 481);
             this.panel3.TabIndex = 16;
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Location = new System.Drawing.Point(-418, 259);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(200, 80);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 5;
+            this.pictureBox16.TabStop = false;
+            // 
             // userSettingScreen1
             // 
             this.userSettingScreen1.Location = new System.Drawing.Point(0, 0);
@@ -227,15 +236,6 @@
             this.dashboardScreen1.Name = "dashboardScreen1";
             this.dashboardScreen1.Size = new System.Drawing.Size(890, 480);
             this.dashboardScreen1.TabIndex = 0;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Location = new System.Drawing.Point(-418, 259);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(200, 80);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 5;
-            this.pictureBox16.TabStop = false;
             // 
             // admin
             // 

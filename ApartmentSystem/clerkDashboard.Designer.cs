@@ -37,18 +37,16 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.settingsIcon = new System.Windows.Forms.Button();
             this.paymentIcon = new System.Windows.Forms.Button();
-            this.invoiceIcon = new System.Windows.Forms.Button();
             this.TenantIcon = new System.Windows.Forms.Button();
             this.unitsIcon = new System.Windows.Forms.Button();
             this.dashboardIcon = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.clerkTenantScreen1 = new ApartmentSystem.clerkTenantScreen();
-            this.clerkUnitScreen1 = new ApartmentSystem.clerkUnitScreen();
-            this.clerkPaymentScreen1 = new ApartmentSystem.clerkPaymentScreen();
-            this.clerkInvoiceScreen1 = new ApartmentSystem.clerkInvoiceScreen();
             this.clerkDashboardScreen1 = new ApartmentSystem.clerkDashboardScreen();
+            this.clerkPaymentScreen1 = new ApartmentSystem.clerkPaymentScreen();
+            this.clerkUnitScreen1 = new ApartmentSystem.clerkUnitScreen();
+            this.clerkTenantScreen1 = new ApartmentSystem.clerkTenantScreen();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -99,7 +97,6 @@
             this.panel2.Controls.Add(this.sidePanel);
             this.panel2.Controls.Add(this.settingsIcon);
             this.panel2.Controls.Add(this.paymentIcon);
-            this.panel2.Controls.Add(this.invoiceIcon);
             this.panel2.Controls.Add(this.TenantIcon);
             this.panel2.Controls.Add(this.unitsIcon);
             this.panel2.Controls.Add(this.dashboardIcon);
@@ -121,7 +118,7 @@
             this.settingsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsIcon.Image = ((System.Drawing.Image)(resources.GetObject("settingsIcon.Image")));
             this.settingsIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsIcon.Location = new System.Drawing.Point(12, 356);
+            this.settingsIcon.Location = new System.Drawing.Point(12, 354);
             this.settingsIcon.Name = "settingsIcon";
             this.settingsIcon.Size = new System.Drawing.Size(158, 60);
             this.settingsIcon.TabIndex = 12;
@@ -134,7 +131,7 @@
             this.paymentIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.paymentIcon.Image = ((System.Drawing.Image)(resources.GetObject("paymentIcon.Image")));
             this.paymentIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.paymentIcon.Location = new System.Drawing.Point(12, 290);
+            this.paymentIcon.Location = new System.Drawing.Point(12, 274);
             this.paymentIcon.Name = "paymentIcon";
             this.paymentIcon.Size = new System.Drawing.Size(158, 60);
             this.paymentIcon.TabIndex = 12;
@@ -142,27 +139,13 @@
             this.paymentIcon.UseVisualStyleBackColor = true;
             this.paymentIcon.Click += new System.EventHandler(this.paymentIcon_Click_1);
             // 
-            // invoiceIcon
-            // 
-            this.invoiceIcon.FlatAppearance.BorderSize = 0;
-            this.invoiceIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.invoiceIcon.Image = ((System.Drawing.Image)(resources.GetObject("invoiceIcon.Image")));
-            this.invoiceIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.invoiceIcon.Location = new System.Drawing.Point(12, 226);
-            this.invoiceIcon.Name = "invoiceIcon";
-            this.invoiceIcon.Size = new System.Drawing.Size(158, 60);
-            this.invoiceIcon.TabIndex = 12;
-            this.invoiceIcon.Text = "Invoice";
-            this.invoiceIcon.UseVisualStyleBackColor = true;
-            this.invoiceIcon.Click += new System.EventHandler(this.invoiceIcon_Click_1);
-            // 
             // TenantIcon
             // 
             this.TenantIcon.FlatAppearance.BorderSize = 0;
             this.TenantIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TenantIcon.Image = ((System.Drawing.Image)(resources.GetObject("TenantIcon.Image")));
             this.TenantIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TenantIcon.Location = new System.Drawing.Point(12, 162);
+            this.TenantIcon.Location = new System.Drawing.Point(12, 194);
             this.TenantIcon.Name = "TenantIcon";
             this.TenantIcon.Size = new System.Drawing.Size(158, 60);
             this.TenantIcon.TabIndex = 12;
@@ -176,7 +159,7 @@
             this.unitsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.unitsIcon.Image = ((System.Drawing.Image)(resources.GetObject("unitsIcon.Image")));
             this.unitsIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.unitsIcon.Location = new System.Drawing.Point(12, 98);
+            this.unitsIcon.Location = new System.Drawing.Point(12, 114);
             this.unitsIcon.Name = "unitsIcon";
             this.unitsIcon.Size = new System.Drawing.Size(158, 60);
             this.unitsIcon.TabIndex = 12;
@@ -218,7 +201,6 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.clerkDashboardScreen1);
-            this.panel6.Controls.Add(this.clerkInvoiceScreen1);
             this.panel6.Controls.Add(this.clerkPaymentScreen1);
             this.panel6.Controls.Add(this.clerkUnitScreen1);
             this.panel6.Controls.Add(this.clerkTenantScreen1);
@@ -227,19 +209,12 @@
             this.panel6.Size = new System.Drawing.Size(890, 480);
             this.panel6.TabIndex = 22;
             // 
-            // clerkTenantScreen1
+            // clerkDashboardScreen1
             // 
-            this.clerkTenantScreen1.Location = new System.Drawing.Point(0, 0);
-            this.clerkTenantScreen1.Name = "clerkTenantScreen1";
-            this.clerkTenantScreen1.Size = new System.Drawing.Size(890, 480);
-            this.clerkTenantScreen1.TabIndex = 0;
-            // 
-            // clerkUnitScreen1
-            // 
-            this.clerkUnitScreen1.Location = new System.Drawing.Point(0, 0);
-            this.clerkUnitScreen1.Name = "clerkUnitScreen1";
-            this.clerkUnitScreen1.Size = new System.Drawing.Size(890, 480);
-            this.clerkUnitScreen1.TabIndex = 1;
+            this.clerkDashboardScreen1.Location = new System.Drawing.Point(0, 0);
+            this.clerkDashboardScreen1.Name = "clerkDashboardScreen1";
+            this.clerkDashboardScreen1.Size = new System.Drawing.Size(890, 480);
+            this.clerkDashboardScreen1.TabIndex = 4;
             // 
             // clerkPaymentScreen1
             // 
@@ -248,19 +223,19 @@
             this.clerkPaymentScreen1.Size = new System.Drawing.Size(890, 480);
             this.clerkPaymentScreen1.TabIndex = 2;
             // 
-            // clerkInvoiceScreen1
+            // clerkUnitScreen1
             // 
-            this.clerkInvoiceScreen1.Location = new System.Drawing.Point(0, 0);
-            this.clerkInvoiceScreen1.Name = "clerkInvoiceScreen1";
-            this.clerkInvoiceScreen1.Size = new System.Drawing.Size(890, 480);
-            this.clerkInvoiceScreen1.TabIndex = 3;
+            this.clerkUnitScreen1.Location = new System.Drawing.Point(0, 0);
+            this.clerkUnitScreen1.Name = "clerkUnitScreen1";
+            this.clerkUnitScreen1.Size = new System.Drawing.Size(890, 480);
+            this.clerkUnitScreen1.TabIndex = 1;
             // 
-            // clerkDashboardScreen1
+            // clerkTenantScreen1
             // 
-            this.clerkDashboardScreen1.Location = new System.Drawing.Point(0, 0);
-            this.clerkDashboardScreen1.Name = "clerkDashboardScreen1";
-            this.clerkDashboardScreen1.Size = new System.Drawing.Size(890, 480);
-            this.clerkDashboardScreen1.TabIndex = 4;
+            this.clerkTenantScreen1.Location = new System.Drawing.Point(0, 0);
+            this.clerkTenantScreen1.Name = "clerkTenantScreen1";
+            this.clerkTenantScreen1.Size = new System.Drawing.Size(890, 480);
+            this.clerkTenantScreen1.TabIndex = 0;
             // 
             // clerkDashboard
             // 
@@ -290,7 +265,6 @@
         private System.Windows.Forms.Panel sidePanel;
         private System.Windows.Forms.Button settingsIcon;
         private System.Windows.Forms.Button paymentIcon;
-        private System.Windows.Forms.Button invoiceIcon;
         private System.Windows.Forms.Button TenantIcon;
         private System.Windows.Forms.Button unitsIcon;
         private System.Windows.Forms.Button dashboardIcon;
@@ -302,7 +276,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private clerkDashboardScreen clerkDashboardScreen1;
-        private clerkInvoiceScreen clerkInvoiceScreen1;
         private clerkPaymentScreen clerkPaymentScreen1;
         private clerkUnitScreen clerkUnitScreen1;
         private clerkTenantScreen clerkTenantScreen1;
