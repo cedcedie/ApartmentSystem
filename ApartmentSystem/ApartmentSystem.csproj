@@ -171,11 +171,11 @@
     <Compile Include="addNewUnitForm.Designer.cs">
       <DependentUpon>addNewUnitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="addnewUnitWindow.cs">
+    <Compile Include="addNewUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addnewUnitWindow.Designer.cs">
-      <DependentUpon>addnewUnitWindow.cs</DependentUpon>
+    <Compile Include="addNewUsers.Designer.cs">
+      <DependentUpon>addNewUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="paymentForm.cs">
       <SubType>Form</SubType>
@@ -194,12 +194,6 @@
     </Compile>
     <Compile Include="clerkDashboardScreen.Designer.cs">
       <DependentUpon>clerkDashboardScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="clerkInvoiceScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="clerkInvoiceScreen.Designer.cs">
-      <DependentUpon>clerkInvoiceScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="clerkPaymentScreen.cs">
       <SubType>UserControl</SubType>
@@ -266,8 +260,8 @@
     <EmbeddedResource Include="addNewUnitForm.resx">
       <DependentUpon>addNewUnitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addnewUnitWindow.resx">
-      <DependentUpon>addnewUnitWindow.cs</DependentUpon>
+    <EmbeddedResource Include="addNewUsers.resx">
+      <DependentUpon>addNewUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="paymentForm.resx">
       <DependentUpon>paymentForm.cs</DependentUpon>
@@ -277,9 +271,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="clerkDashboardScreen.resx">
       <DependentUpon>clerkDashboardScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="clerkInvoiceScreen.resx">
-      <DependentUpon>clerkInvoiceScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="clerkPaymentScreen.resx">
       <DependentUpon>clerkPaymentScreen.cs</DependentUpon>

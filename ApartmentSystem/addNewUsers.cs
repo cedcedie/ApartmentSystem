@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace ApartmentSystem
 {
-    public partial class clerkInvoiceScreen : UserControl
+    public partial class addNewUsers : Form
     {
-        public event EventHandler DashboardIconClicked;
-        public clerkInvoiceScreen()
+        public addNewUsers()
         {
             InitializeComponent();
         }
-
-    
     }
 }

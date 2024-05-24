@@ -20,16 +20,11 @@ namespace ApartmentSystem
             clerkDashboardScreen1.Dock = DockStyle.Fill;
             clerkDashboardScreen1.ViewDetailsTenantsClicked += DashboardScreen1_ViewDetailsclerkTenantsClicked;
             clerkDashboardScreen1.ViewDetailsUnitsClicked += DashboardScreen1_ViewDetailsUnitsClicked;
-            clerkDashboardScreen1.ViewDetailsInvoiceClicked += DashboardScreen1_ViewDetailsInvoiceClicked;
             clerkDashboardScreen1.ViewDetailsPaymentsClicked += DashboardScreen1_ViewDetailsPaymentsClicked;
 
             clerkPaymentScreen1 = new clerkPaymentScreen();
             clerkPaymentScreen1.Dock = DockStyle.Fill;
             clerkPaymentScreen1.DashboardIconClicked += PaymentScreen1_DashboardIconClicked;
-
-            clerkInvoiceScreen1 = new clerkInvoiceScreen();
-            clerkInvoiceScreen1.Dock = DockStyle.Fill;
-            clerkInvoiceScreen1.DashboardIconClicked += InvoiceScreen1_DashboardIconClicked;
 
             clerkUnitScreen1 = new clerkUnitScreen();
             clerkUnitScreen1.Dock = DockStyle.Fill;
@@ -49,23 +44,6 @@ namespace ApartmentSystem
             ShowDashboardScreen();
         }
 
-        private void ShowInvoiceScreen()
-        {
-            panel4.Controls.Clear();
-            panel4.Controls.Add(clerkInvoiceScreen1);
-            clerkDashboardScreen1.Visible = false;
-            clerkTenantScreen1.Visible = false;
-            clerkUnitScreen1.Visible = false;
-            clerkInvoiceScreen1.Visible = true;
-            clerkPaymentScreen1.Visible = false;
-            sidePanel.Height = invoiceIcon.Height;
-            sidePanel.Top = invoiceIcon.Top;
-        }
-
-        private void DashboardScreen1_ViewDetailsInvoiceClicked(object sender, EventArgs e)
-        {
-            ShowInvoiceScreen();
-        }
 
         private void InvoiceScreen1_DashboardIconClicked(object sender, EventArgs e)
         {
@@ -84,7 +62,6 @@ namespace ApartmentSystem
             clerkDashboardScreen1.Visible = false;
             clerkTenantScreen1.Visible = false;
             clerkUnitScreen1.Visible = false;
-            clerkInvoiceScreen1.Visible = false;
             clerkPaymentScreen1.Visible = true;
             sidePanel.Height = paymentIcon.Height;
             sidePanel.Top = paymentIcon.Top;
@@ -102,7 +79,6 @@ namespace ApartmentSystem
             clerkDashboardScreen1.Visible = true;
             clerkTenantScreen1.Visible = false;
             clerkUnitScreen1.Visible = false;
-            clerkInvoiceScreen1.Visible = false;
             clerkPaymentScreen1.Visible = false;
             sidePanel.Height = dashboardIcon.Height;
             sidePanel.Top = dashboardIcon.Top;
@@ -120,7 +96,6 @@ namespace ApartmentSystem
             clerkDashboardScreen1.Visible = false;
             clerkTenantScreen1.Visible = true;
             clerkUnitScreen1.Visible = false;
-            clerkInvoiceScreen1.Visible = false;
             clerkPaymentScreen1.Visible = false;
             sidePanel.Height = TenantIcon.Height;
             sidePanel.Top = TenantIcon.Top;
@@ -156,21 +131,11 @@ namespace ApartmentSystem
         {
             ShowTenantScreen();
         }
-
-        private void invoiceIcon_Click_1(object sender, EventArgs e)
-        {
-            ShowInvoiceScreen();
-        }
-
         private void paymentIcon_Click_1(object sender, EventArgs e)
         {
             ShowPaymentScreen();
         }
 
-        private void clerkDashboardScreen1_Load(object sender, EventArgs e)
-        {
-
-        }
         private void ViewDetailsUnitsClicked_Handler(object sender, EventArgs e)
         {
             ShowUnitScreen();
@@ -178,11 +143,6 @@ namespace ApartmentSystem
         private void ViewDetailsTenantsClicked_Handler(object sender, EventArgs e)
         {
             ShowTenantScreen();
-        }
-
-        private void ViewDetailsInvoiceClicked_Handler(object sender, EventArgs e)
-        {
-            ShowInvoiceScreen();
         }
 
         private void ViewDetailsPaymentsClicked_Handler(object sender, EventArgs e)
