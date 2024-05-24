@@ -54,9 +54,9 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 19);
+            this.label1.Size = new System.Drawing.Size(55, 19);
             this.label1.TabIndex = 4;
-            this.label1.Text = "TOTAL MONTHS";
+            this.label1.Text = "Room ID";
             // 
             // label2
             // 
