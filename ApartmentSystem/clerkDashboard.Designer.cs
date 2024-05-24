@@ -35,7 +35,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.settingsIcon = new System.Windows.Forms.Button();
             this.paymentIcon = new System.Windows.Forms.Button();
             this.TenantIcon = new System.Windows.Forms.Button();
             this.unitsIcon = new System.Windows.Forms.Button();
@@ -95,7 +94,6 @@
             this.panel2.BackColor = System.Drawing.Color.Bisque;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.sidePanel);
-            this.panel2.Controls.Add(this.settingsIcon);
             this.panel2.Controls.Add(this.paymentIcon);
             this.panel2.Controls.Add(this.TenantIcon);
             this.panel2.Controls.Add(this.unitsIcon);
@@ -111,19 +109,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(890, 480);
             this.panel4.TabIndex = 27;
-            // 
-            // settingsIcon
-            // 
-            this.settingsIcon.FlatAppearance.BorderSize = 0;
-            this.settingsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsIcon.Image = ((System.Drawing.Image)(resources.GetObject("settingsIcon.Image")));
-            this.settingsIcon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsIcon.Location = new System.Drawing.Point(12, 354);
-            this.settingsIcon.Name = "settingsIcon";
-            this.settingsIcon.Size = new System.Drawing.Size(158, 60);
-            this.settingsIcon.TabIndex = 12;
-            this.settingsIcon.Text = "Settings";
-            this.settingsIcon.UseVisualStyleBackColor = true;
             // 
             // paymentIcon
             // 
@@ -263,7 +248,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Panel sidePanel;
-        private System.Windows.Forms.Button settingsIcon;
         private System.Windows.Forms.Button paymentIcon;
         private System.Windows.Forms.Button TenantIcon;
         private System.Windows.Forms.Button unitsIcon;

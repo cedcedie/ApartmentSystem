@@ -59,12 +59,6 @@
             this.viewDetailsVacant = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.balanceLabel = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.viewDetailsBalance = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
@@ -80,9 +74,6 @@
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // label9
@@ -317,7 +308,7 @@
             // 
             this.panel16.BackColor = System.Drawing.Color.Bisque;
             this.panel16.Controls.Add(this.viewDetailsOccupied);
-            this.panel16.Location = new System.Drawing.Point(243, 324);
+            this.panel16.Location = new System.Drawing.Point(25, 324);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(180, 46);
             this.panel16.TabIndex = 56;
@@ -342,7 +333,7 @@
             this.panel17.Controls.Add(this.label11);
             this.panel17.Controls.Add(this.occupiedLabel);
             this.panel17.Controls.Add(this.pictureBox7);
-            this.panel17.Location = new System.Drawing.Point(243, 233);
+            this.panel17.Location = new System.Drawing.Point(25, 233);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(180, 94);
             this.panel17.TabIndex = 57;
@@ -424,73 +415,6 @@
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(4, 20);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(73, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // balanceLabel
-            // 
-            this.balanceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.balanceLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.balanceLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.balanceLabel.Location = new System.Drawing.Point(80, 20);
-            this.balanceLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.balanceLabel.Name = "balanceLabel";
-            this.balanceLabel.Size = new System.Drawing.Size(100, 39);
-            this.balanceLabel.TabIndex = 10;
-            this.balanceLabel.Text = "0";
-            this.balanceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(86, 59);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 22);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "BALANCE";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.SaddleBrown;
-            this.panel13.Controls.Add(this.label15);
-            this.panel13.Controls.Add(this.balanceLabel);
-            this.panel13.Controls.Add(this.pictureBox4);
-            this.panel13.Location = new System.Drawing.Point(25, 233);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(180, 94);
-            this.panel13.TabIndex = 61;
-            // 
-            // viewDetailsBalance
-            // 
-            this.viewDetailsBalance.FlatAppearance.BorderSize = 0;
-            this.viewDetailsBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewDetailsBalance.Image = ((System.Drawing.Image)(resources.GetObject("viewDetailsBalance.Image")));
-            this.viewDetailsBalance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.viewDetailsBalance.Location = new System.Drawing.Point(0, 0);
-            this.viewDetailsBalance.Name = "viewDetailsBalance";
-            this.viewDetailsBalance.Size = new System.Drawing.Size(180, 46);
-            this.viewDetailsBalance.TabIndex = 0;
-            this.viewDetailsBalance.Text = "ViewDetails";
-            this.viewDetailsBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.viewDetailsBalance.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Bisque;
-            this.panel12.Controls.Add(this.viewDetailsBalance);
-            this.panel12.Location = new System.Drawing.Point(25, 324);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(180, 46);
-            this.panel12.TabIndex = 60;
-            // 
             // clerkDashboardScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,8 +424,6 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
@@ -529,10 +451,6 @@
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -569,11 +487,5 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button viewDetailsVacant;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label balanceLabel;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Button viewDetailsBalance;
-        private System.Windows.Forms.Panel panel12;
     }
 }
