@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace ApartmentSystem
 {
@@ -21,12 +22,33 @@ namespace ApartmentSystem
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            admin dashboard = new admin();
-            dashboard.Show();
-            this.Hide();
-
             SqlConnection conn = new SqlConnection(Connection.conn);
-            //SqlAdapter
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT username, password FROM Admin", conn);
+            SqlDataReader read = cmd.ExecuteReader();
+            bool isLogin = false;
+            while (read.Read())
+            {
+                if (userInput.Text == read.GetValue(0).ToString() && passwordInput.Text == read.GetValue(1).ToString())
+                {
+                    isLogin = true;
+                    break;
+                }
+                else
+                {
+                    isLogin = false;
+                }
+            }
+            if (isLogin)
+            {
+                admin dashboard = new admin();
+                dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username or Password. \n Please try again.", "ALERT", MessageBoxButtons.OK);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
