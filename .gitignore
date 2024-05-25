@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ApartmentSystem/APARTMENT_RENTAL.mdf
+/ApartmentSystem/APARTMENT_RENTAL_log.ldf
+/.vs/ApartmentSystem/FileContentIndex/70551019-5998-4788-b5ad-2b662a7ecd0b.vsidx
