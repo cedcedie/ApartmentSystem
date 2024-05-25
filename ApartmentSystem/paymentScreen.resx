@@ -117,49 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="edit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEu1
-        lUtqwzAQhoWxwQZj/OjOm66K6Q0K2YdCLtEb5Bpdd9uLdNszFALd9QDddtvOP0RhJI/VSHEWnxK95tPD
-        ksx2v1uFtm03RVE8D8Nw79c5mVT6vn/I8/zDGPNLoveu6+5kvdM4BcyABAcILL5o1imWuq6fsiz7kRJf
-        pHY8B8ygqqqXcRxv6Xe/JMIeqQH+47gHvEQU6C0kwkDUICGkwLIkonZfTdM8qoGW0AQWXwQBLekW/dRg
-        GiGBxYrwMVgBmAXTOEdgKcvy1e/vZDRiBFgi7IEfw8n4xArkEklmBZa1BEAtXFMAZgVrC4CTuYYAnP7g
-        jrmGAHBCB+gGEhwmLagkVgA4wQklAb9qIVGKAHDCNyUFCYlSBcBM01TJoJroEgHg/aAg/D5roksFgD9b
-        upq/pUSKUK91jOH0RkNEo/7E6HGT4l3ALLVOsfBMjvf/Bm8B9khrmM7O/AFNeEVnXtaJOQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAeZJREFUSEu1
-        lK1OA0EUhZsgMSQoBN3Zn+m2KanBYCigEFSSkCBrMUieAIfkCRDVlQgMihfgfZhvuredXU6CWcSXnTmz
-        e+6dO3dncP24+Hek2DdS7BspKubzi70u6j2FFLvU3rvSubc2+WpUVjfq/S6/BDLMnTvckrmD6XhyWwyz
-        72D6AL4ol5XL36u8eGE9ff/yfL7f9WxNoK78GQb5MPvMj4dfZeY+eBKEcTQPMDeN9Uj4hgS6nq0JkMm4
-        8jOfF0+YhY9OCYwGjNFszJMdUT7Gs+nJUdezNUkZ+9FVCLImqC+K58morillOsac8yIhdOUDUsRgW7ZQ
-        Z54EJSBj1tApFQEJQCDlBVIESoIh22dHdJIFYQ2dIM1OXmkI5QNSBDLEJJqFlg3Z36VBYlsn60H7deCG
-        FMFMLFNM0iAc8i5IvqLNlQ9IEawc7IgDphxpEGDcnFksp/IBKQI/GSZkbAfb2knTfRaEufIBKYIZxv+i
-        adE0CJlTJus+NOUDUoTGMGZIqTiXNAiNwIGnZVU+IEXgX7FLMFwX90mQ9aaE5RItbRDlA1I0rDXJluzt
-        J+W8MCVY2urKA6RoxFuWSzJe7ZvrfTfeQPniZRoCKw+QokGW9P9fsDt2qTxAin0jxb6RYt9IsV8Wgx/F
-        r04KiJC1QAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="transaction.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tenantID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="unit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="STATUS.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

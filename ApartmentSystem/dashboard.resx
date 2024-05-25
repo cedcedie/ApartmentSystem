@@ -147,6 +147,18 @@
         NTkuHu7+AQqIBQDehU5QAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="invoiceIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAXlJREFUSEu1
+        lL9Ow0AMh7swMOSvEiWRMnTqxBAxsjIw0BdgZWOCB6jUqVulPkJflfvQGVl3Di1JOnxy7mefnfM5Wb18
+        bW+OKS6NKULf9/dd12V/Ye2zMEUKZFl2gCRJ9iOcnf/d2h9iim3blhTAUjBkGIa7NE0/KJTn+ZuVQ2OK
+        JHcJdiS0/MApyrJ8ptilQqZ4bREKVFX1dKl1pnhNkbquHyhCcscnhdhnxUYCSBEsLSmK4lVwU7X2MRvW
+        +Jk04pumqcNcEAmgi5CIngskJ4aTsMYv8ZOKyDRpmCxisFqfXIRNvt+/3wcXTQxtYo2fOIkPc0EkgD6J
+        vLG2xIT65CLYsTtx+uMid4KlPbRG0NPFGv+s6aINPLNZQCMGyxr/rHaxyf+jdsJNLt7yh8w+CZfLacbA
+        P/skfNlM0hj4J53ET8vZJfn5N+kJs56JI56Xs/JFAvg327tWHN3FHpw96Wdvj/oZy8tZ+SJB4Ev+L1Ye
+        MMWlMcVl2a6+Abqb8YJ6F/W8AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="TenantIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAv1JREFUSEuF
