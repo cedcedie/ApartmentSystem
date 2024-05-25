@@ -21,6 +21,6 @@ namespace ApartmentSystem
     }
     public static class Connection
     {
-        public static string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\gamil.293092\source\repos\ApartmentSystem\ApartmentSystem\APARTMNET_RENTAL.mdf;Integrated Security=True";
+        public static string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\jack_\source\repos\ApartmentSystem\ApartmentSystem\APARTMENT_RENTAL.mdf;Integrated Security=True";
     }
 }
